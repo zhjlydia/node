@@ -3,10 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: '首页' });
 });
 router.get('/layout', function(req, res) {
-  res.render('layout', { title: 'Express' });
+  res.render('layout');
 });
 router.get('/list', function(req, res) {
   res.render('list', { 
@@ -19,6 +19,7 @@ router.get('/u/:user', function(req, res) {
 router.post('/post', function(req, res) {
 });
 router.get('/reg', function(req, res) {
+  res.render('reg', { title: '用户注册' });
 });
 router.post('/reg', function(req, res) {
 });
