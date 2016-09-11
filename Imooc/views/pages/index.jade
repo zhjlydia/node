@@ -1,0 +1,10 @@
+extent ../layout
+
+block content
+ .container
+   .row
+     each item in movies
+       .col-md-2
+         .thumbnail
+           a(href="/movie/#{item._id}")
+         
